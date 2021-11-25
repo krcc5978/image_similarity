@@ -59,7 +59,7 @@ if __name__ == '__main__':
             compare_score = check_score.check_score(score_list[i], score_list[j])
 
             # 距離が近いものを削除用リストに設定
-            if compare_score < args.thresh:
+            if compare_score <= args.thresh:
                 result.append(img_path_list[j])
 
     print('file move or delete')
